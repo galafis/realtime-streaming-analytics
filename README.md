@@ -20,6 +20,22 @@
 
 ## English
 
+## 📊 Architecture Diagram
+
+```mermaid
+graph LR
+    A[Data Sources] --> B[Kafka]
+    B --> C[Stream Processors]
+    C --> D[Aggregations]
+    D --> E[Real-time Dashboards]
+    C --> F[Data Lake]
+    
+    style A fill:#e1f5ff
+    style E fill:#c8e6c9
+    style B fill:#fff9c4
+```
+
+
 ## 🎯 Features
 
 - Kafka Producers/Consumers
